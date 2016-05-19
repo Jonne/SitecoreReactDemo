@@ -9,7 +9,15 @@ namespace ReactSitecore.Common
     {
         public virtual void Process(PipelineArgs args)
         {
-            HttpContext.Current.SetSessionStateBehavior(SessionStateBehavior.Required);
+            if (IsWebApiRequest())
+            {
+                HttpContext.Current.SetSessionStateBehavior(SessionStateBehavior.Required);
+            }
+        }
+        
+        private bool IsWebApiRequest()
+        {
+            return HttpContext.Current.Request.AppRelativeCurrentExecutionFilePath.StartsWith("~/api");
         }
     }
 }

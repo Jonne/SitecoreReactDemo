@@ -1,6 +1,15 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: "Raleway",Arial,sans-serif
+
+}
+
+article {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.3);
+    margin: 0 0 .625rem;
+    border-radius: .25rem;
+    padding: 5px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +30,8 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.subtotal {
+    font-weight: bold
 }

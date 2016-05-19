@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using System.Net.Http;
+using System.Web.Http;
 
 using ReactSitecore.Models;
 using ReactSitecore.Services;
@@ -16,5 +17,19 @@ namespace ReactSitecore.Api
         {
             return cartService.Get();
         }
+        
+        [HttpPost]
+        [Route("remove")]
+        public IHttpActionResult Remove(RemoveItem data)
+        {
+            cartService.Remove(data.ProductId);
+
+            return Ok();
+        }
+    }
+
+    public class RemoveItem
+    {
+        public string ProductId { get; set; }
     }
 }

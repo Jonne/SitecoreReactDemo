@@ -5,8 +5,13 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Layout</title>
+
 </head>
 <body>
     <div>@Html.Sitecore().Placeholder("main")</div>
+
+    @Scripts.Render("~/bundles/react")
+    @Scripts.Render("~/bundles/jquery")
+    @Styles.Render("~/bundles/css")
 </body>
 </html>
