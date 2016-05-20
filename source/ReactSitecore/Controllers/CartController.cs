@@ -12,10 +12,5 @@ namespace ReactSitecore.Controllers
         {
             return View(cartService.Get());
         }
-
-        public ActionResult Data()
-        {
-            return Json(cartService.Get());
-        }
     }
 }

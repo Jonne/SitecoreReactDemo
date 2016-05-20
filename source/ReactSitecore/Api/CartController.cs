@@ -27,9 +27,4 @@ namespace ReactSitecore.Api
             return Ok();
         }
     }
-
-    public class RemoveItem
-    {
-        public string ProductId { get; set; }
-    }
 }

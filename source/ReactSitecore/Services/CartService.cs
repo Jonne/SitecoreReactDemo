@@ -75,12 +75,5 @@ namespace ReactSitecore.Services
 
             Current.LineItems.Remove(lineItem);
         }
-
-        public void Update(string productId, long quantity)
-        {
-            LineItemModel lineItem = Current.LineItems.Single(x => x.ProductId == productId);
-
-            lineItem.Quantity = quantity;
-        }
     }
 }

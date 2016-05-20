@@ -1,4 +1,5 @@
 ﻿using System.Web.Optimization;
+using System.Web.Optimization.React;
 
 using ReactSitecore;
 
@@ -23,6 +24,11 @@ namespace ReactSitecore
                 .Include("~/Scripts/react-dom.js"));
 
             bundles.Add(new StyleBundle("~/bundles/css").Include("~/Content/Site.css"));
+
+            bundles.Add(new BabelBundle("~/bundles/main").Include(
+                "~/Scripts/Components/Cart.jsx",
+                "~/Scripts/Components/CartLine.jsx"
+                ));
         }
     }
 }
