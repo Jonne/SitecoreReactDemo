@@ -212,6 +212,12 @@
     <Compile Include="Services\CartService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\images\sprite.png" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\customjs.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -219,6 +225,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="readme.txt" />
     <Content Include="App_Config\Include\ReactSitecore\React.config" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Properties\PublishProfiles\Dev.pubxml" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\react-dom.js" />

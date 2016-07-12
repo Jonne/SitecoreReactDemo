@@ -17,19 +17,25 @@
     },
     render: function () {
         return (
-          <div>
-              <div className="products">
-                  {
-                    this.state.data.LineItems.map(item => {
-                        return (<CartLine LineItem={item} onRemove={this.handleRemove } />);
-                    })
-                  }
-              </div>
-              <div>
-                  <span>Subtotal:</span>
-                  <span className="subtotal">{this.state.data.Subtotal}</span>
-              </div>
-          </div>
+            <ul>
+					<li className="row list-inline columnCaptions">
+						<span>QTY</span>
+						<span>ITEM</span>
+						<span>Price</span>
+					</li>
+
+                    {
+                        this.state.data.LineItems.map(item => {
+                            return (<CartLine LineItem={item} onRemove={this.handleRemove} />);
+                        })
+                    }
+
+					<li className="row totals">
+						<span className="itemName">Total:</span>
+						<span className="price">${this.state.data.Subtotal}</span>
+						<span className="order"> <a className="text-center">ORDER</a></span>
+					</li>
+				</ul>
       );
     }
 });

@@ -1,17 +1,20 @@
 ﻿var CartLine = React.createClass({
-    propTypes: {
-        LineItem: React.PropTypes.object,
-        onRemove: React.PropTypes.func
+    propTypes : {
+        LineItem : React.PropTypes.object,
+        onRemove : React.PropTypes.func
     },
-    render: function () {
+    render : function (){
         return (
-            <article>
-                <div className="description">{this.props.LineItem.Description}</div>
-                <div className="remove">
-                    <a href="#" onClick={() => this.props.onRemove(this.props.LineItem.ProductId)}>Remove</a>
-                </div>
-            </article>
-      ); 
+            <li className="row">
+                <span className="quantity">1</span>
+                <span className="itemName">{this.props.LineItem.Description}</span>
+                <span className="popbtn">
+                    <a onClick={() => this.props.onRemove(this.props.LineItem.ProductId)}>
+                        <span className="glyphicon glyphicon-remove"></span>
+                    </a>
+                </span>
+                <span className="price">${this.props.LineItem.Price}</span>				
+            </li>
+        );
     }
 });
-

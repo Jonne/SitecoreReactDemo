@@ -23,7 +23,10 @@ namespace ReactSitecore
                 .Include("~/Scripts/react.js")
                 .Include("~/Scripts/react-dom.js"));
 
-            bundles.Add(new StyleBundle("~/bundles/css").Include("~/Content/Site.css"));
+            bundles.Add(new StyleBundle("~/bundles/css").Include(
+                    "~/assets/css/bootstrap.min.css",
+                    "~/assets/css/custom.css"
+                ));
 
             bundles.Add(new BabelBundle("~/bundles/main").Include(
                 "~/Scripts/Components/Cart.jsx",
