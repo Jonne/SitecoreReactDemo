@@ -222,7 +222,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\Site.css" />
     <Content Include="readme.txt" />
     <Content Include="App_Config\Include\ReactSitecore\React.config" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
@@ -235,8 +234,6 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Cart\Cart.cshtml" />
     <Content Include="Views\Layout.cshtml" />
-    <Content Include="Scripts\Components\Cart.jsx" />
-    <Content Include="Scripts\Components\CartLine.jsx" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -248,6 +245,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\Components\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

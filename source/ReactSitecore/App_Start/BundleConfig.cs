@@ -27,11 +27,6 @@ namespace ReactSitecore
                     "~/assets/css/bootstrap.min.css",
                     "~/assets/css/custom.css"
                 ));
-
-            bundles.Add(new BabelBundle("~/bundles/main").Include(
-                "~/Scripts/Components/Cart.jsx",
-                "~/Scripts/Components/CartLine.jsx"
-                ));
         }
     }
 }
